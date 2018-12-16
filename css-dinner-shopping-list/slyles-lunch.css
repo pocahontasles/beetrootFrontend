@@ -1,0 +1,88 @@
+body{
+    background-color: #093612;
+}
+header{
+    position: relative;
+    text-align: center;
+    background-color: #0f8729;
+    border: 2px solid #093612;
+    padding: 10px;
+    color: #093612;
+    font-family: Bahnschrift;
+}
+main{
+     position: relative;
+     margin-top: 20px;
+ }
+
+div.apple, div.pickle, div.orange, div.bottle, div.plate, div.bento {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100px;
+    border: 2px solid #0c571c;
+    box-sizing: border-box;
+    padding: 20px 20px 20px;
+    background-color: #e4db32;
+}
+form div:hover{
+     background-color: #0f8729;
+ }
+input[type="checkbox"]{
+    display: none;
+}
+
+label{
+
+    font-size: 25px;
+    font-family:  Bahnschrift;
+    position: relative;
+    color: #093612;
+}
+label::before{
+   content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: aliceblue;
+    margin-left: -10px;
+    margin-right: 10px;
+    border: 1px solid #093612;
+}
+input[type="checkbox"]:checked + label::before{
+    content: '' ;
+    background-image: url("./checkbox.svg");
+    background-size: 100%;
+}
+
+input[type="checkbox"]:checked +label, input[type="checkbox"]:checked +label+span {
+    text-decoration: line-through;
+    color: rgba(17, 24, 40, 0.5);
+}
+
+input[type="submit"] {
+    position: relative;
+    width: 50%;
+    background: #0f8729;
+    color: #093612;
+    padding:20px;
+    font-size: 25px;
+    font-family: Bahnschrift;
+    border: 1px solid #093612 ;
+    border-radius: 10px;
+}
+div.centre div.submit{
+    margin-top: 10px;
+    text-align: center;
+}
+input[name="submit"]:hover{
+    color: #e4db32;
+}
+
+
+
+
+
+
+
